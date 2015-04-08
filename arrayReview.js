@@ -107,6 +107,24 @@ var myPoem = 'What is a jQuery but a misunderstood object?'
 
   //code here
 
+var capitalize = function(str) {
+
+  var strArr = str.split(" ");
+  var newArr = [];
+
+  for (var i = 0; i < strArr.length; i++) {
+
+    var FirstLetter = strArr[i].charAt(0).toUpperCase();
+    var restOfWord = strArr[i].slice(1);
+
+    newArr[i] = FirstLetter + restOfWord;
+
+  }
+
+  return newArr.join(' ');
+
+};
+console.log(capitalize(myPoem));
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
