@@ -56,14 +56,20 @@ var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
 
 
-//Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] if you created your copy correctly.
+/*Create a copy of first and save it into second. Then, add 6 and 7 to the end of second. 
+When you run this, first should be just [1,2,3,4,5] and second will be [1,2,3,4,5,6,7] 
+if you created your copy correctly.*/
+
 var first = [1,2,3,4,5];
 var second;
 
   //code here
 
-alert(first) //[1,2,3,4,5];
-alert(second) //[1,2,3,4,5,6,7];
+second = first.slice();
+second.push(6, 7);
+
+alert(first); //[1,2,3,4,5];
+alert(second); //[1,2,3,4,5,6,7];
 
 
 
