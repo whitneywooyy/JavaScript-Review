@@ -19,6 +19,17 @@ var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
 
+var newArr = function (arr) {
+ for (var i = 0; i < arr.length; i++) {
+  if (arr[i] %2 !== 0) {
+   arr.splice(i, 1);
+   i--;
+  }
+ }
+    return arr;
+};
+newArr(evenArray);
+
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
