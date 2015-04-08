@@ -4,6 +4,10 @@ var threeItems = [1,2,3];
 
   //code here
 
+var last = function(arr) {
+	return arr[arr.length - 1];
+};
+last(threeItems);
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
