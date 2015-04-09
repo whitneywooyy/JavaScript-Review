@@ -2,6 +2,8 @@
 
   //Your code here
 
+
+
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Your code here
@@ -65,8 +67,39 @@ var user = {
 
 
 
-//write a function called voweler that accepts a string, and returns an object with the keys being all the vowels in that string, and the values being how many times that particular vowel was in the string.
-//voweler("This is a test") --> {i: 2, a: 1, e: 1};
+//write a function called voweler that accepts a string, and returns an object 
+// with the keys being all the vowels in that string, and the values being how 
+// many times that particular vowel was in the string.
+// voweler("This is a test") --> {i: 2, a: 1, e: 1};
 
 
+var voweler = function(str) {
+  var a = 0;
+  var e = 0;
+  var i = 0;
+  var o = 0;
+  var u = 0;
+  for (var j = 0; j < str.length; j++) {
+    if (str[j] === 'a') {
+      a++;
+    } else if (str[j] === 'e'){
+      e++;
+    } else if (str[j] === 'i'){
+      i++;
+    } else if (str[j] === 'o'){
+      o++;
+    } else if (str[j] === 'u'){
+      u++;
+    }
+  }
+  var obj = {
+    a: a,
+    e: e,
+    i: i,
+    o: o,
+    u: u
+  };
+  return obj;
+}
 
+console.log(voweler("This is a test"));
