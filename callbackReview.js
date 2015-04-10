@@ -15,7 +15,9 @@ first(names, function(firstName){
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
-
+var last = function(arr, cb2) {
+  return cb2(arr[arr.length-1]);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
