@@ -30,7 +30,15 @@ last(names, function(lastName){
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.
-
+ 
+ var contains = function(name, arr, cb3) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === name) {
+      return cb3(true);
+    }
+  }
+  return false;
+ };
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains('Colt', names, function(yes){
@@ -47,7 +55,13 @@ contains('Colt', names, function(yes){
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
-
+var map = function(arr, cb) {
+  var temp = [];
+  for(var i = 0; i < arr.length; i++) {
+    temp[i] = cb(arr[i]);
+  }
+  return temp;
+};
 
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
