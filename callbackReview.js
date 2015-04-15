@@ -52,7 +52,7 @@ contains('Colt', names, function(yes){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 4. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 var map = function(arr, cb) {
@@ -72,9 +72,25 @@ map(numbers, function(num){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 5. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var uniq = function(arr, cb) {
+  var newArr = [];
+  newArr.push(arr[0]);
+    for (var i = 0; i < arr.length; i++) {
+        var isNew = true;
+        for (var j = 0; j < newArr.length; j++) {
+            if (arr[i] === newArr[j]) {
+                isNew = false;
+            }
+                        
+        }
+        if (isNew) {
+            newArr.push(arr[i]);    
+        }
+    }
+    return cb(newArr);
+};
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -85,7 +101,7 @@ uniq(names, function(uniqArr){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 6. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -98,7 +114,7 @@ each(names, function(item, indice){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 7. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -130,7 +146,7 @@ getUserById('16t', users, function(user){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 8. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
