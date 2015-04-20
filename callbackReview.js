@@ -1,4 +1,4 @@
-/* Declare and Define the functions here that will make the function calls below work properly */
+/* 1. Declare and Define the functions here that will make the function calls below work properly */
 
 var first = function(arr, cb) {
   return cb(arr[0]);
@@ -12,7 +12,7 @@ first(names, function(firstName){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 2. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 var last = function(arr, cb2) {
@@ -27,7 +27,7 @@ last(names, function(lastName){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/* 3. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.
  
@@ -160,10 +160,18 @@ getUserById('16t', users, function(user){
 /* 8. NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
-
+var find = function(arr, cb){
+  for (var i = 0; i < arr.length; i++) {
+    var num = arr[i];
+    if (cb(num)) {
+      return num;
+    }
+    
+  }
+};
 
 //Looks through each value in the list, returning the first one that passes a truth test 
 var numbers  = [1, 2, 3, 4, 5, 6];
 find(numbers, function(num){ 
-  return num % 2 == 0; //should return 2
+  return num % 2 === 0; //should return 2
 })
